@@ -21,14 +21,14 @@ public class Main {
         // (m == 1 && n == 0) -> User Paper, Computer Rock -> User wins
         // (m == 2 && n == 1) -> User Scissors, Computer Paper -> User wins
         if ((m == 0 && n == 2) || (m == 1 && n == 0) || (m == 2 && n == 1)) {
-            System.out.println("You win!");
+            System.out.println("You win congratulation!");
         }
 
         // (n == 0 && m == 2) -> Computer Rock, User Scissors -> Computer wins
         // (n == 1 && m == 0) -> Computer Paper, User Rock -> Computer wins
         // (n == 2 && m == 1) -> Computer Scissors, User Paper -> Computer wins
         else if ((n == 0 && m == 2) || (n == 1 && m == 0) || (n == 2 && m == 1)) {
-            System.out.println("You lose!");
+            System.out.println("sorry You lose!");
         } else {
             System.out.println("Draw!");
         }
@@ -37,5 +37,6 @@ public class Main {
         System.out.println("Computer chose: " + n);
 
         sc.close(); // Close the scanner to prevent resource leaks
+    System.out.println("Thanks for playing");
     }
 }
